@@ -1,0 +1,29 @@
+image: python:3.11
+
+stages:
+  - test
+
+before_script:
+  - pip install -r requirements.txt
+
+smoke_tests:
+  stage: test
+  script:
+    - pytest -v -n auto -m smoke --alluredir=allure-results/smoke
+  artifacts:
+    when: always
+    paths:
+      - allure-results/smoke/
+  rules:
+    - when: always
+
+regression_tests:
+  stage: test
+  script:
+    - pytest -v -n auto -m regression --alluredir=allure-results/regression
+  artifacts:
+    when: always
+    paths:
+      - allure-results/regression/
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
