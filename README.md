@@ -59,7 +59,7 @@ pytest -m smoke
 pytest -m regression
 ```
 ## Allure Report
-```text
+```bash
 # Generate report data:
 pytest --alluredir=allure-results
 
