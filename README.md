@@ -51,9 +51,9 @@ Run smoke tests:
 Run regression tests:
 
 ```pytest -m regression```
-Allure Report
+## Allure Report
 
-## Generate report data:
+Generate report data:
 
 ```pytest --alluredir=allure-results```
 
