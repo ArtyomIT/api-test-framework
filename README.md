@@ -37,29 +37,35 @@ tests/
   test_products.py
   test_users.py
 ```
+## Setup
+```text
+# Create and activate virtual environment
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
 
 ## Run Tests
+```text
+# Run all tests:
+pytest
 
-Run all tests:
+# Run smoke tests:
+pytest -m smoke
 
-```pytest```
-
-Run smoke tests:
-
-```pytest -m smoke```
-
-Run regression tests:
-
-```pytest -m regression```
+# Run regression tests:
+pytest -m regression
+```
 ## Allure Report
+```text
+# Generate report data:
+pytest --alluredir=allure-results
 
-Generate report data:
-
-```pytest --alluredir=allure-results```
-
-Open report:
-
-```allure serve allure-results```
+# Open report:
+allure serve allure-results
+```
 ## CI
 
 Tests run automatically in GitLab CI:
