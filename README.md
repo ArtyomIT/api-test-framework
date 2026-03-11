@@ -1,14 +1,16 @@
 # API Test Automation Framework
 
-REST API test automation project built with **Python**, **Pytest**, **Requests**, **Pydantic**, and **Allure**.
+REST API test automation project built with **Python**, **Pytest**, **Requests**, **Pydantic** and **Allure**.
 
 ## About
 
 This project demonstrates a structured approach to API testing with:
+- page object
+- fixtures
+- parametrized tests
 - reusable API clients
 - response schema validation
 - positive and negative scenarios
-- parametrized tests
 - smoke and regression suites
 - Allure reporting
 - GitLab CI pipeline
@@ -26,7 +28,6 @@ This project demonstrates a structured approach to API testing with:
 
 ```text
 api/
-  assertions/     # reusable assertions
   clients/        # API clients
   data/           # test payloads
   models/         # Pydantic response models
@@ -36,19 +37,6 @@ tests/
   test_products.py
   test_users.py
 ```
-## Covered Scenarios
-
-authentication
-
-users API
-
-products API
-
-schema validation
-
-business checks
-
-negative API scenarios
 
 ## Run Tests
 
@@ -89,7 +77,5 @@ API test automation
 test framework design
 
 contract validation
-
-maintainable test architecture
 
 CI integration
