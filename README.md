@@ -1,8 +1,20 @@
-# api-test-framework
+# API Test Automation Framework
 
-Framework for REST API testing.
+REST API test automation project built with **Python**, **Pytest**, **Requests**, **Pydantic**, and **Allure**.
+
+## About
+
+This project demonstrates a structured approach to API testing with:
+- reusable API clients
+- response schema validation
+- positive and negative scenarios
+- parametrized tests
+- smoke and regression suites
+- Allure reporting
+- GitLab CI pipeline
 
 ## Stack
+
 - Python
 - Pytest
 - Requests
@@ -12,39 +24,71 @@ Framework for REST API testing.
 
 ## Project Structure
 
+```text
 api/
+  assertions/     # reusable assertions
   clients/        # API clients
-  models/         # Pydantic models
   data/           # test payloads
-  assertions/     # custom assertions
+  models/         # Pydantic response models
 
 tests/
   test_auth.py
   test_products.py
   test_users.py
+Covered Scenarios
 
-## Features
-- fixtures
-- schema validation via Pydantic
-- parametrized tests
-- positive / negative scenarios
-- smoke and regression suites
-- Allure reporting
-- GitLab CI pipeline
+authentication
 
-## Run tests
+users API
+
+products API
+
+schema validation
+
+business checks
+
+negative API scenarios
+
+Run Tests
+
+Run all tests:
 
 pytest
 
-Smoke tests
+Run smoke tests:
 
 pytest -m smoke
 
-Regression tests
+Run regression tests:
 
 pytest -m regression
+Allure Report
 
-## Allure report
+Generate report data:
 
 pytest --alluredir=allure-results
+
+Open report:
+
 allure serve allure-results
+CI
+
+Tests run automatically in GitLab CI:
+
+smoke tests run on every pipeline
+
+regression tests run on main
+
+Goal
+
+This repository was created as part of my QA Automation portfolio to demonstrate practical skills in:
+
+API test automation
+
+test framework design
+
+contract validation
+
+maintainable test architecture
+
+CI integration
