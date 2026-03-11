@@ -38,7 +38,7 @@ tests/
   test_users.py
 ```
 ## Setup
-```text
+```bash
 # Create and activate virtual environment
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 ```
 
 ## Run Tests
-```text
+```bash
 # Run all tests:
 pytest
 
@@ -78,10 +78,10 @@ Tests run automatically in GitLab CI:
 
 This repository was created as part of my QA Automation portfolio to demonstrate practical skills in:
 
-API test automation
+- API test automation
 
-test framework design
+- test framework design
 
-contract validation
+- contract validation
 
-CI integration
+- CI integration
