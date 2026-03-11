@@ -57,6 +57,9 @@ pytest -m smoke
 
 # Run regression tests:
 pytest -m regression
+
+# Run tests with parallelization:
+pytest -n auto
 ```
 ## Allure Report
 ```bash
