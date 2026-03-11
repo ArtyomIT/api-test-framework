@@ -60,9 +60,9 @@ Generate report data:
 Open report:
 
 ```allure serve allure-results```
-CI
+## CI
 
-## Tests run automatically in GitLab CI:
+Tests run automatically in GitLab CI:
 
 - smoke tests run on every pipeline
 
