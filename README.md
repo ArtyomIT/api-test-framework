@@ -35,7 +35,8 @@ tests/
   test_auth.py
   test_products.py
   test_users.py
-Covered Scenarios
+```
+## Covered Scenarios
 
 authentication
 
@@ -49,37 +50,37 @@ business checks
 
 negative API scenarios
 
-Run Tests
+## Run Tests
 
 Run all tests:
 
-pytest
+```pytest```
 
 Run smoke tests:
 
-pytest -m smoke
+```pytest -m smoke```
 
 Run regression tests:
 
-pytest -m regression
+```pytest -m regression```
 Allure Report
 
-Generate report data:
+## Generate report data:
 
-pytest --alluredir=allure-results
+```pytest --alluredir=allure-results```
 
 Open report:
 
-allure serve allure-results
+```allure serve allure-results```
 CI
 
-Tests run automatically in GitLab CI:
+## Tests run automatically in GitLab CI:
 
-smoke tests run on every pipeline
+- smoke tests run on every pipeline
 
-regression tests run on main
+- regression tests run on main
 
-Goal
+## Goal
 
 This repository was created as part of my QA Automation portfolio to demonstrate practical skills in:
 
